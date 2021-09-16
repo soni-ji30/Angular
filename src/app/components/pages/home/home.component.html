@@ -1,0 +1,50 @@
+<!--binding by interpolation for one way data binding-->
+<!--<p>home works!</p>
+    <h3>{{title}}</h3>
+
+<input type="text" value="{{message}}">
+<hr>
+<p>Message:{{message}}</p>
+-->
+
+
+<!--for two way data binding which is rarely used-->
+<!--<input type="text" [(ngModel)]="message">
+<hr>
+<p>Message:{{message}}</p>-->
+<!--<ul>
+    <li *ngFor="let c of countries; index as i">index:{{i}} {{c}}</li>
+</ul>
+<select name="" id="">
+    <option value="">Select Country</option>
+    <option *ngFor="let c of countries" [value]="c">{{c}}</option>
+</select>
+-->
+<!--for drop down box-->
+
+
+
+
+
+
+<table>
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Gender</th>
+            <th>Salary</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let emp of employees">
+            <td>{{emp.id}}</td>
+            <td>{{emp.name}}</td>
+            <td>{{emp.age}}</td>
+            <td>{{emp.gender}}</td>
+            <td>{{emp.salary}}</td>
+        </tr>
+    </tbody>
+</table>
